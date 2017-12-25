@@ -20,12 +20,22 @@ public class BuyerRestController {
     }
 
     @PutMapping
-    public void update(@RequestBody Buyer buyer){
-        buyerService.update(buyer);
+    public boolean update(@RequestBody Buyer buyer){
+        return buyerService.update(buyer);
+    }
+
+    @PostMapping
+    public Integer save(@RequestBody Buyer buyer){
+        return buyerService.add(buyer);
     }
 
     @DeleteMapping(value = "/{id}")
-    public void delete(@PathVariable("id") Integer id){
-        buyerService.delete(id);
+    public boolean delete(@PathVariable(value = "id", required = true) Integer id){
+       return buyerService.delete(id);
+    }
+
+    @GetMapping(value = "/{id}")
+    public Buyer getById(@PathVariable(value = "id", required = true)Integer id){
+        return buyerService.getById(id);
     }
 }

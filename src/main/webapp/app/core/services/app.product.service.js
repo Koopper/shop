@@ -3,11 +3,11 @@
     'use strict';
     var app = angular.module('app');
 
-    app.factory("BuyerService", ['$http', '$q','ConfigService','$window',  function($http, $q, ConfigService, $window) {
+    app.factory("ProductService", ['$http', '$q','ConfigService','$window',  function($http, $q, ConfigService, $window) {
 
         var factory = {};
 
-        var rootPath = ConfigService.getRootPath()+"/buyer";
+        var rootPath = ConfigService.getRootPath()+"/product";
 
         factory.getAll = function() {
             var defer = $q.defer();
