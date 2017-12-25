@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Entity.Vendor" table="vendor" schema="public" catalog="Shop">
+        <id name="idV">
+            <column name="id_v" sql-type="integer"/>
+        </id>
+        <property name="loginV">
+            <column name="login_v" sql-type="text" not-null="true"/>
+        </property>
+        <property name="passwordV">
+            <column name="password_v" sql-type="text" not-null="true"/>
+        </property>
+        <property name="fioV">
+            <column name="fio_v" sql-type="text" not-null="true"/>
+        </property>
+        <property name="phoneV">
+            <column name="phone_v" sql-type="text" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
