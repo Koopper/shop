@@ -11,7 +11,6 @@ import java.util.List;
 
 @Transactional
 @Repository
-
 public class DiscountDAOImpl implements DiscountDAO {
     @PersistenceContext
     private EntityManager entityManager;

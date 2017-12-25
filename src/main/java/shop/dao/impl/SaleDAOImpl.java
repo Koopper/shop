@@ -12,7 +12,6 @@ import java.util.List;
 
 @Transactional
 @Repository
-
 public class SaleDAOImpl implements SaleDAO {
     @PersistenceContext
     private EntityManager entityManager;

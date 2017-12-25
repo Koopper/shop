@@ -30,7 +30,7 @@ public class Discount {
         this.idDis = idDis;
     }
 
-    @Basic
+  
     @Column(name = "name_dis", nullable = true, length = -1)
     public String getNameDis() {
         return nameDis;
@@ -50,7 +50,7 @@ public class Discount {
         this.product = product;
     }
 
-    @Basic
+  
     @Column(name = "sum", nullable = true, precision = 0)
     public Integer getSum() {
         return sum;

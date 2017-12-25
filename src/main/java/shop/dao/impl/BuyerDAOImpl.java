@@ -11,7 +11,6 @@ import java.util.List;
 
 @Transactional
 @Repository
-
 public class BuyerDAOImpl implements BuyerDAO {
     @PersistenceContext
     private EntityManager entityManager;

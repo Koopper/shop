@@ -25,7 +25,7 @@ public class Product {
         this.idPr = idPr;
     }
 
-    @Basic
+  
     @Column(name = "name_pr", nullable = true, length = -1)
     public String getNamePr() {
         return namePr;
@@ -35,7 +35,7 @@ public class Product {
         this.namePr = namePr;
     }
 
-    @Basic
+  
     @Column(name = "desc_pr", nullable = true, length = -1)
     public String getDescPr() {
         return descPr;
@@ -45,7 +45,7 @@ public class Product {
         this.descPr = descPr;
     }
 
-    @Basic
+  
     @Column(name = "price", nullable = true, precision = 0)
     public Integer getPrice() {
         return price;
@@ -55,7 +55,7 @@ public class Product {
         this.price = price;
     }
 
-    @Basic
+  
     @Column(name = "stock", nullable = true)
     public Integer getStock() {
         return stock;

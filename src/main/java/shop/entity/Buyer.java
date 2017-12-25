@@ -21,7 +21,7 @@ public class Buyer {
         this.idB = idB;
     }
 
-    @Basic
+  
     @Column(name = "login_b", nullable = true, length = -1)
     public String getLoginB() {
         return loginB;
@@ -31,8 +31,7 @@ public class Buyer {
         this.loginB = loginB;
     }
 
-
-    @Basic
+    
     @Column(name = "fio_b", nullable = true, length = -1)
     public String getFioB() {
         return fioB;
@@ -42,7 +41,7 @@ public class Buyer {
         this.fioB = fioB;
     }
 
-    @Basic
+  
     @Column(name = "email_b", nullable = true, length = -1)
     public String getEmailB() {
         return emailB;
@@ -52,7 +51,7 @@ public class Buyer {
         this.emailB = emailB;
     }
 
-    @Basic
+  
     @Column(name = "phone_b", nullable = true, length = -1)
     public String getPhoneB() {
         return phoneB;

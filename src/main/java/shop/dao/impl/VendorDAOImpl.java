@@ -11,7 +11,6 @@ import java.util.List;
 
 @Transactional
 @Repository
-
 public class VendorDAOImpl implements VendorDAO{
     @PersistenceContext
     private EntityManager entityManager;

@@ -23,7 +23,7 @@ public class Vendor {
         this.idV = idV;
     }
 
-    @Basic
+  
     @Column(name = "login_v", nullable = true, length = -1)
     public String getLoginV() {
         return loginV;
@@ -33,7 +33,7 @@ public class Vendor {
         this.loginV = loginV;
     }
 
-    @Basic
+  
     @Column(name = "fio_v", nullable = true, length = -1)
     public String getFioV() {
         return fioV;
@@ -43,7 +43,7 @@ public class Vendor {
         this.fioV = fioV;
     }
 
-    @Basic
+  
     @Column(name = "phone_v", nullable = true, length = -1)
     public String getPhoneV() {
         return phoneV;
