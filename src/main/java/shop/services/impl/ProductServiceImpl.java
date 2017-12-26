@@ -1,12 +1,13 @@
 package shop.services.impl;
 
+import org.springframework.stereotype.Service;
 import shop.dao.ProductDAO;
 import shop.entity.Product;
 import shop.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
-
+@Service
 public class ProductServiceImpl implements ProductService {
     @Autowired
     private ProductDAO productDAO;

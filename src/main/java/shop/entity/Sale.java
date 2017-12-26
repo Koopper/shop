@@ -12,16 +12,10 @@ public class Sale {
     private Integer sum;
     private Date date;
 
-    @ManyToOne
-    @JoinColumn(name = "id_v")
     private Vendor vendor;
 
-    @ManyToOne
-    @JoinColumn(name = "id_b")
     private Buyer buyer;
 
-    @ManyToOne
-    @JoinColumn(name = "id_pr")
     private Product product;
 
     @Id
@@ -65,6 +59,8 @@ public class Sale {
         this.date = date;
     }
 
+    @ManyToOne
+    @JoinColumn(name = "id_v")
     public Vendor getVendor() {
         return vendor;
     }
@@ -72,9 +68,13 @@ public class Sale {
         this.vendor = vendor;
     }
 
+    @ManyToOne
+    @JoinColumn(name = "id_b")
     public Buyer getBuyer() {return buyer;}
     public void getBuyer(Buyer buyer) {this.buyer = buyer;}
 
+    @ManyToOne
+    @JoinColumn(name = "id_pr")
     public Product getProduct() {
         return product;
     }

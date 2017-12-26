@@ -2,9 +2,6 @@ package shop.entity;
 
 import javax.persistence.*;
 
-/**
- * Created by tenni_000 on 24.12.2017.
- */
 @Entity
 @Table(name = "discount", schema = "public", catalog = "Shop")
 public class Discount {
@@ -12,12 +9,8 @@ public class Discount {
     private String nameDis;
     private Integer sum;
 
-    @ManyToOne
-    @JoinColumn(name = "id_pr")
     private Product product;
 
-    @ManyToOne
-    @JoinColumn(name = "id_b")
     private Buyer buyer;
 
     @Id
@@ -40,9 +33,13 @@ public class Discount {
         this.nameDis = nameDis;
     }
 
+    @ManyToOne
+    @JoinColumn(name = "idBuyer")
     public Buyer getBuyer() {return buyer;}
-    public void getBuyer(Buyer buyer) {this.buyer = buyer;}
+    public void setBuyer(Buyer buyer) {this.buyer = buyer;}
 
+    @ManyToOne
+    @JoinColumn(name = "idProduct")
     public Product getProduct() {
         return product;
     }
